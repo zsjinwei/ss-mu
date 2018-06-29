@@ -9,7 +9,7 @@ RUN apt-get update && \
     echo "1" | ./shadowsocks_new.sh install
 
 ADD run.sh /run.sh
-RUN chmod +x /run.sh && cat /usr/local/shadowsocksr/config.json
+RUN chmod +x /run.sh
 
 EXPOSE 50000-60000
 

@@ -124,7 +124,9 @@ if [ "$MANYUSER" = "R" ]; then
         #sed -ri "s@^(.*\"obfs_param\": ).*@\1\"$OBFS_PARAM\",@" /shadowsocks/config.json
  
 fi
- 
+
+cat /usr/local/shadowsocksr/config.json
+
 service ssr start
 sleep 10
 service ssr status
